@@ -1,0 +1,52 @@
+{
+  "titulo": "Chromatic 2048",
+  "desarrollador": "AlexVentor",
+  "url_sitio": "",
+  "video_youtube": "",
+  "colores": [
+    "#ff3b3b",
+    "#3bff5e",
+    "#3b6bff"
+  ],
+  "icono": "assets/icon.png",
+  "capturas": [],
+  "fuente": "assets/vt323.ttf",
+  "soporte": {
+    "email": "melerobits@gmail.com",
+    "web": "",
+    "tiempo_respuesta": "48 horas hábiles",
+    "faq": [
+      {
+        "pregunta": "¿Cómo quito los anuncios?",
+        "respuesta": "Con la compra única «Chromatic Premium» desde el botón dorado del menú principal. La compra se restaura sola al reinstalar o cambiar de móvil."
+      },
+      {
+        "pregunta": "¿Perderé mi partida si desinstalo el juego?",
+        "respuesta": "La partida y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games."
+      }
+    ],
+    "nombre": "AlexVentor"
+  },
+  "privacidad": {
+    "fecha_vigencia": "",
+    "edad_minima": 13,
+    "requiere_cuenta": false,
+    "anuncios": {
+      "activo": true,
+      "proveedor": "Google AdMob"
+    },
+    "compras": {
+      "activo": true,
+      "proveedor": "Google Play Billing"
+    },
+    "play_games": {
+      "activo": true
+    },
+    "analiticas": {
+      "activo": false
+    },
+    "reportes_errores": {
+      "activo": false
+    }
+  }
+}

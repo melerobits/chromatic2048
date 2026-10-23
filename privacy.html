@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de Privacidad — Chromatic 2048</title>
+<meta name="description" content="Política de Privacidad de Chromatic 2048: qué datos recopila, cómo se usan y con quién se comparten.">
+<meta property="og:title" content="Política de Privacidad — Chromatic 2048"><meta property="og:description" content="Política de Privacidad de Chromatic 2048: qué datos recopila, cómo se usan y con quién se comparten."><meta property="og:type" content="website">
+<link rel="icon" href="assets/icon.png">
+<style>@font-face{font-family:'JuegoFuente';src:url('assets/vt323.ttf');font-display:swap}
+:root{--bg:#07070d;--bg2:#0e0e18;--tx:#f2f2f7;--mut:#9a9ab0;--line:rgba(255,255,255,.09);
+--a1:#ff3b3b;--a2:#3bff5e;--a3:#3b6bff;--font:'JuegoFuente',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+body{font-size:1.3rem}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--font);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1080px,100%);margin:0 auto;padding:0 24px}
+nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.95rem}
+nav div{display:flex;gap:26px;font-size:.9rem;color:var(--mut)}
+nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
+.hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
+.hero::before,.hero::after{content:"";position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:.33;animation:flota 16s ease-in-out infinite alternate}
+.hero::before{background:var(--a1);left:-22vmax;top:-26vmax}
+.hero::after{background:var(--a3);right:-24vmax;bottom:-30vmax;animation-delay:-8s}
+.blob{position:absolute;width:44vmax;height:44vmax;border-radius:50%;background:var(--a2);filter:blur(100px);opacity:.22;left:30%;top:35%;animation:flota 20s ease-in-out infinite alternate-reverse}
+.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 15%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at center,#000 15%,transparent 70%)}
+@keyframes flota{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.hero .wrap{position:relative;z-index:2}
+.icon{width:clamp(110px,16vw,168px);height:auto;border-radius:22%;image-rendering:pixelated;box-shadow:0 0 0 1px var(--line),0 24px 80px #000a,0 0 70px color-mix(in srgb,var(--a3) 40%,transparent);margin-bottom:34px}
+h1{font-size:clamp(2.6rem,9vw,6.4rem);line-height:1;letter-spacing:.04em;text-transform:uppercase;font-weight:800;
+background:linear-gradient(100deg,var(--a1),var(--a2) 50%,var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 40px #0009)}
+section{padding:96px 0}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);text-transform:uppercase;letter-spacing:.1em;text-align:center;margin-bottom:12px}
+.sub{text-align:center;color:var(--mut);margin-bottom:44px}
+.video{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000 center/cover;box-shadow:0 0 0 1px var(--line),0 30px 90px #000c}
+.video iframe,.video button{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video button{background:linear-gradient(#0000,#0008);cursor:pointer;display:grid;place-items:center;border:0}
+.play{width:92px;height:92px;border-radius:50%;background:#ffffffee;display:grid;place-items:center;transition:transform .2s}
+.video button:hover .play{transform:scale(1.1)}
+.play::after{content:"";border-left:26px solid #07070d;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:8px}
+.soon{display:grid;place-items:center;aspect-ratio:16/9;border-radius:18px;border:1px dashed #ffffff30;color:var(--mut)}
+.shots{display:flex;gap:16px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
+.shots img{height:420px;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start}
+.stores{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.store{display:flex;align-items:center;gap:16px;min-width:240px;padding:16px 26px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.store:hover{transform:translateY(-3px);border-color:var(--brand);box-shadow:0 12px 40px color-mix(in srgb,var(--brand) 28%,transparent)}
+.store img{width:34px;height:34px}
+.store small{display:block;color:var(--mut);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.store b{font-size:1.2rem}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:.88rem}
+footer .wrap{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap}
+footer div{display:flex;gap:22px}
+.doc{padding:130px 0 80px;max-width:820px}
+.doc h1{font-size:clamp(1.9rem,5vw,2.8rem);letter-spacing:.03em;margin-bottom:8px}
+.doc .meta{color:var(--mut);margin-bottom:36px}
+.doc h2{text-align:left;font-size:1.25rem;letter-spacing:.02em;text-transform:none;margin:38px 0 10px}
+.doc p,.doc li{color:#d0d0de;margin-bottom:10px}
+.doc ul{padding-left:22px}
+.doc a{color:var(--a2)}
+.doc table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:.93rem}
+.doc th,.doc td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;color:#d0d0de}
+.doc th{background:var(--bg2);color:var(--tx)}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0}
+@media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
+<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="support.html">Soporte</a></div></div></nav>
+<main class="wrap doc"><h1>Política de Privacidad de Chromatic 2048</h1>
+<p class="meta">Última actualización: 23/10/2026</p>
+<p>Esta política describe cómo <b>AlexVentor</b> («nosotros») recopila, usa y comparte información cuando usas la aplicación <b>Chromatic 2048</b> («la app» o «el juego»). Al usar la app aceptas esta política.</p>
+
+<h2>1. Información que recopilamos</h2>
+<p>Chromatic 2048 no requiere crear una cuenta ni registrarte con tu correo. No te pedimos nombre, correo, teléfono, ubicación ni acceso a contactos, fotos o micrófono. Estos son los datos que se tratan:</p>
+<table><tr><th>Datos</th><th>Para qué los usamos</th><th>Cómo se tratan</th></tr><tr><td>Datos de juego guardados en tu dispositivo (ajustes, partida, récords)</td><td>Hacer funcionar el juego, guardar tu progreso</td><td>Se guardan cifrados <b>solo en tu dispositivo</b>; no se envían a nuestros servidores.</td></tr><tr><td>Identificador de jugador y nombre público de tu cuenta de Google Play Games</td><td>Clasificaciones online (ranking) y mostrar tu nombre en la tabla</td><td>Se comparten con Google Play Games Services.</td></tr><tr><td>Identificador de publicidad del dispositivo, dirección IP aproximada, datos del dispositivo (modelo, SO, idioma) e interacción con los anuncios</td><td>Mostrar, medir y limitar la frecuencia de anuncios; prevenir fraude</td><td>Se comparten con Google AdMob y sus socios publicitarios.</td></tr><tr><td>Estado de tu compra (producto, token de compra). <b>No recibimos tus datos de pago.</b></td><td>Desbloquear el juego completo / quitar anuncios y restaurar tu compra</td><td>El pago lo procesa la tienda (Google Play / App Store).</td></tr></table>
+
+<h2>2. Cómo usamos la información</h2>
+<ul><li>Para ofrecer y mantener el juego y guardar tu progreso.</li>
+<li>Para mostrar clasificaciones online.</li>
+<li>Para mostrar y medir anuncios.</li>
+<li>Para gestionar tus compras y restaurarlas.</li>
+<li>Para prevenir fraude y trampas, y cumplir obligaciones legales.</li></ul>
+
+<h2>3. Con quién compartimos la información</h2>
+<p>Chromatic 2048 utiliza servicios de terceros que pueden recopilar información para identificarte o para cumplir sus propias finalidades. Estos son los terceros con los que se comparten datos:</p><table><tr><th>Tercero</th><th>Finalidad</th><th>Su política</th></tr><tr><td>Google Play Games Services</td><td>Clasificaciones y cuenta de jugador</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></td></tr><tr><td>Google AdMob</td><td>Publicidad</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Política de privacidad</a></td></tr><tr><td>Google Play Billing</td><td>Pagos y compras integradas</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></td></tr></table><p>No vendemos tus datos personales. No compartimos datos con otros terceros (por ejemplo, agencias de datos o redes sociales) salvo obligación legal.</p>
+<h2>Publicidad</h2>
+<p>La versión gratuita muestra anuncios intersticiales entre partidas a través de Google AdMob. Los anuncios pueden ser personalizados o no, según tu configuración y tu consentimiento.
+En el Espacio Económico Europeo, Reino Unido y Suiza te pedimos tu consentimiento (formulario de consentimiento de Google, UMP) antes de mostrar anuncios personalizados y puedes cambiarlo luego.
+Puedes restablecer u ocultar tu identificador de publicidad desde los ajustes de Android (Google &gt; Anuncios). Si compras el juego, no se muestran anuncios.</p>
+
+<h2>4. Almacenamiento y seguridad</h2>
+<p>Los datos locales (ajustes, partida y récords) se almacenan cifrados en tu dispositivo. Usamos conexiones seguras (HTTPS) en las comunicaciones con servicios de terceros. Ningún método es 100&nbsp;% infalible, pero aplicamos medidas razonables para protegerte.</p>
+
+<h2>5. Conservación y eliminación de datos</h2>
+<p>Los datos locales permanecen mientras tengas el juego instalado; al desinstalarlo se eliminan. Para eliminar tus datos de Google Play Games (puntuaciones y perfil de jugador) usa los ajustes de Play Games o escríbenos y haremos la solicitud correspondiente. Puedes pedirnos la eliminación de cualquier dato asociado a ti escribiendo a <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a>.</p>
+
+<h2>6. Tus derechos</h2>
+<p>Según tu país (por ejemplo RGPD en la UE/EEE, UK GDPR, CCPA/CPRA en California, LGPD en Brasil) puedes acceder, rectificar, eliminar, limitar u oponerte al tratamiento de tus datos, retirar tu consentimiento y reclamar ante tu autoridad de protección de datos. Escríbenos y responderemos en un plazo razonable.</p>
+
+<h2>7. Transferencias internacionales</h2>
+<p>Los terceros indicados pueden tratar datos en países distintos al tuyo, aplicando las garantías legales que correspondan (como cláusulas contractuales tipo).</p>
+
+<h2>Menores de edad</h2>
+<p>Chromatic 2048 no está dirigido a menores de 13 años y no recopilamos conscientemente datos personales de ellos. Si crees que un menor nos ha facilitado datos, escríbenos a <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a> y los eliminaremos.</p>
+
+<h2>8. Cambios en esta política</h2>
+<p>Podemos actualizar esta política. Publicaremos la versión vigente en esta misma dirección con su fecha de actualización; si los cambios son importantes, te avisaremos dentro de la app.</p>
+
+<h2>9. Contacto</h2>
+<p>AlexVentor — <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a> — <a href="support.html">Página de soporte</a></p>
+</main>
+<footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
+<div><a href="privacy.html">Política de Privacidad</a><a href="support.html">Soporte</a></div></div></footer>
+</body></html>
