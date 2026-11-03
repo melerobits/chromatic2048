@@ -1,16 +1,12 @@
 {
-  "titulo": "Chromatic 2048",
+  "titulo": "Starfield Survivors",
   "desarrollador": "AlexVentor",
   "url_sitio": "",
-  "video_youtube": "",
-  "colores": [
-    "#ff3b3b",
-    "#3bff5e",
-    "#3b6bff"
-  ],
+  "video_youtube": "https://www.youtube.com/watch?v=3H7CobO5n7Y",
+  "colores": ["#2de2e6", "#ff2a6d", "#f9f871"],
   "icono": "assets/icon.png",
   "capturas": [],
-  "fuente": "assets/vt323.ttf",
+  "fuente": "assets/PressStart2P.ttf",
   "soporte": {
     "email": "melerobits@gmail.com",
     "web": "",
@@ -18,11 +14,15 @@
     "faq": [
       {
         "pregunta": "¿Cómo quito los anuncios?",
-        "respuesta": "Con la compra única «Chromatic Premium» desde el botón dorado del menú principal. La compra se restaura sola al reinstalar o cambiar de móvil."
+        "respuesta": "Con la compra única «Quitar anuncios» desde el botón flotante de los menús. La compra se restaura sola al reinstalar o cambiar de móvil con la misma cuenta de Google Play."
       },
       {
         "pregunta": "¿Perderé mi partida si desinstalo el juego?",
-        "respuesta": "La partida y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games."
+        "respuesta": "La partida, las mejoras y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games."
+      },
+      {
+        "pregunta": "¿Cómo se controla la nave?",
+        "respuesta": "Con dos botones táctiles, uno por cohete. Puedes cambiar el cruce de controles, el tamaño y la opacidad en Ajustes > Controles. También hay soporte para mando."
       }
     ],
     "nombre": "AlexVentor"
@@ -31,22 +31,10 @@
     "fecha_vigencia": "",
     "edad_minima": 13,
     "requiere_cuenta": false,
-    "anuncios": {
-      "activo": true,
-      "proveedor": "Google AdMob"
-    },
-    "compras": {
-      "activo": true,
-      "proveedor": "Google Play Billing"
-    },
-    "play_games": {
-      "activo": true
-    },
-    "analiticas": {
-      "activo": false
-    },
-    "reportes_errores": {
-      "activo": false
-    }
+    "anuncios": { "activo": true, "proveedor": "Google AdMob" },
+    "compras": { "activo": true, "proveedor": "Google Play Billing" },
+    "play_games": { "activo": true },
+    "analiticas": { "activo": false },
+    "reportes_errores": { "activo": false }
   }
 }
