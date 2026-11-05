@@ -22,11 +22,9 @@ nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.95rem}
 nav div{display:flex;gap:26px;font-size:.9rem;color:var(--mut)}
 nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
 .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
-.hero::before,.hero::after{content:"";position:absolute;width:60vmax;height:60vmax;border-radius:50%;filter:blur(90px);opacity:.33;animation:flota 16s ease-in-out infinite alternate}
-.hero::before{background:var(--a1);left:-22vmax;top:-26vmax}
-.hero::after{background:var(--a3);right:-24vmax;bottom:-30vmax;animation-delay:-8s}
-.blob{position:absolute;width:44vmax;height:44vmax;border-radius:50%;background:var(--a2);filter:blur(100px);opacity:.22;left:30%;top:35%;animation:flota 20s ease-in-out infinite alternate-reverse}
-.grid{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:56px 56px;mask-image:radial-gradient(ellipse at center,#000 15%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at center,#000 15%,transparent 70%)}
+.hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
+.hero::before{background:radial-gradient(circle,var(--a1) 2.4px,transparent 3px) 0 0/18px 18px;-webkit-mask-image:linear-gradient(120deg,#000,transparent 65%);mask-image:linear-gradient(120deg,#000,transparent 65%)}
+.hero::after{background:radial-gradient(circle,var(--a3) 2.4px,transparent 3px) 9px 9px/18px 18px;-webkit-mask-image:linear-gradient(300deg,#000,transparent 65%);mask-image:linear-gradient(300deg,#000,transparent 65%)}
 @keyframes flota{to{transform:translate(8vmax,6vmax) scale(1.15)}}
 .hero .wrap{position:relative;z-index:2}
 .icon{width:clamp(110px,16vw,168px);height:auto;border-radius:22%;image-rendering:pixelated;box-shadow:0 0 0 1px var(--line),0 24px 80px #000a,0 0 70px color-mix(in srgb,var(--a3) 40%,transparent);margin-bottom:34px}
@@ -72,7 +70,7 @@ details p{margin:10px 0 0}
 </head>
 <body>
 <nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
-<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a></div></div></nav>
+<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="terms.html">Condiciones</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a></div></div></nav>
 <main class="wrap doc"><h1>Eliminación de cuenta y datos en Chromatic 2048</h1>
 <p class="meta">Cómo borrar tu información de forma permanente.</p>
 <p>Chromatic 2048 utiliza los servicios de Google Play Games para gestionar el inicio de sesión y las tablas de clasificación (rankings). No almacenamos contraseñas ni datos personales en servidores propios.</p>
@@ -86,5 +84,5 @@ details p{margin:10px 0 0}
 <p>Al borrar o desvincular la cuenta de Play Games, se eliminan todos los logros, puntajes e identificadores asociados a tu perfil. Ningún dato personal es retenido tras la solicitud.</p>
 <p>Más información en nuestra <a href="privacy.html">Política de Privacidad</a>.</p></main>
 <footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
-<div><a href="privacy.html">Política de Privacidad</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
+<div><a href="privacy.html">Política de Privacidad</a><a href="terms.html">Condiciones del Servicio</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
 </body></html>
