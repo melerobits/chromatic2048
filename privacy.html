@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07070d">
 <title>Privacy Policy — Chromatic 2048</title>
 <meta name="description" content="Chromatic 2048 Privacy Policy: what data it collects, how it is used and who it is shared with.">
 <meta property="og:title" content="Privacy Policy — Chromatic 2048"><meta property="og:description" content="Chromatic 2048 Privacy Policy: what data it collects, how it is used and who it is shared with."><meta property="og:type" content="website">
@@ -19,7 +20,7 @@ a{color:inherit}
 nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
 nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
-nav div{display:flex;gap:22px;font-size:.78rem;color:var(--mut)}
+nav .links{display:flex;gap:22px;font-size:.78rem;color:var(--mut);flex:1;justify-content:flex-end;align-items:center}
 nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
 .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
 .hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
@@ -51,7 +52,7 @@ h2{font-size:clamp(1.5rem,3.4vw,2.1rem);text-transform:uppercase;letter-spacing:
 footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:.88rem}
 footer .wrap{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap}
 footer div{display:flex;gap:22px}
-.doc{padding:130px 0 80px;max-width:820px}
+.doc{padding:130px 24px 80px;max-width:868px}
 .doc h1{font-size:clamp(1.9rem,5vw,2.8rem);letter-spacing:.03em;margin-bottom:8px}
 .doc .meta{color:var(--mut);margin-bottom:36px}
 .doc h2{text-align:left;font-size:1.25rem;letter-spacing:.02em;text-transform:none;margin:38px 0 10px}
@@ -65,31 +66,68 @@ details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;pa
 summary{cursor:pointer;font-weight:700}
 details p{margin:10px 0 0}
 .lang{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.lang{margin-left:6px}
+.lang{order:3}
+nav .links{order:2}
 .lang a{padding:2px 10px;font-size:.72rem;letter-spacing:.08em}
 .lang a.on{background:var(--a2);color:#07070d;font-weight:700}
-nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px}
-nav div{align-items:center;flex-wrap:wrap;justify-content:flex-end}
-@media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
+nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px;gap:8px 18px}
+html,body{overflow-x:hidden}
+h1,h2,.sub,.doc p,.doc li,.doc td,.doc a,summary{overflow-wrap:anywhere}
+img{max-width:100%}
+@media(max-width:720px){
+body{font-size:0.9rem;line-height:1.7}
+.wrap{padding:0 18px}
+nav{position:relative;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{min-height:0;padding-top:10px;padding-bottom:0;gap:6px 12px}
+nav b{font-size:.8rem;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.lang{order:2}
+nav .links{order:3;flex:0 0 100%;justify-content:flex-start;flex-wrap:wrap;gap:0 16px;font-size:.7rem;padding-bottom:8px}
+nav .links a{padding:8px 0}
+.hero{min-height:0;padding:40px 0 56px}
+.icon{width:104px;margin-bottom:24px}
+h1{font-size:clamp(1.5rem,8.2vw,3rem);letter-spacing:.02em}
+section{padding:52px 0}
+h2{font-size:1.15rem;letter-spacing:.06em}
+.sub{margin-bottom:26px;font-size:.95em}
+.video{border-radius:12px}
+.play{width:68px;height:68px}
+.shots{margin:0 -18px;padding:0 18px 12px;gap:12px;scroll-padding:0 18px}
+.shots img{height:min(62vh,440px);width:auto;flex:none}
+.stores{gap:12px}
+.store{min-width:0;width:100%;padding:14px 18px}
+footer{padding:28px 0;font-size:.74rem}
+footer .wrap{flex-direction:column;gap:14px}
+footer div{flex-wrap:wrap;gap:8px 18px}
+.doc{padding:36px 18px 56px}
+.doc h1{font-size:1.25rem;line-height:1.35}
+.doc h2{font-size:.98rem;margin:28px 0 8px;line-height:1.4}
+.doc table,.doc tbody,.doc tr,.doc td{display:block;width:100%}
+.doc tr:first-child{display:none}
+.doc tr{border:1px solid var(--line);border-radius:10px;margin-bottom:12px;background:var(--bg2);overflow:hidden}
+.doc td{border:0;border-bottom:1px solid var(--line);padding:9px 12px}
+.doc tr td:last-child{border-bottom:0}
+.doc td::before{content:attr(data-l);display:block;color:var(--mut);font-size:.72em;letter-spacing:.06em;text-transform:uppercase;margin-bottom:2px}
+details{padding:12px 14px}
+}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
-<nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
-<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Download</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete.html">Delete data</a><a href="support.html">Support</a><span class="lang" role="group" aria-label="Language / Idioma"><a href="privacy.html" hreflang="en" lang="en" class=on aria-current=true>EN</a><a href="es/privacy.html" hreflang="es" lang="es">ES</a></span></div></div></nav>
+<nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b><span class="lang" role="group" aria-label="Language / Idioma"><a href="privacy.html" hreflang="en" lang="en" class=on aria-current=true>EN</a><a href="es/privacy.html" hreflang="es" lang="es">ES</a></span>
+<div class="links"><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Download</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete.html">Delete data</a><a href="support.html">Support</a></div></div></nav>
 <main class="wrap doc"><h1>Chromatic 2048 Privacy Policy</h1>
 <p class="meta">Last updated: November 10, 2026</p>
 <p>This policy describes how <b>AlexVentor</b> (“we”) collects, uses and shares information when you use the app <b>Chromatic 2048</b> (“the app” or “the game”). By using the app you accept this policy.</p>
 
 <h2>1. Information we collect</h2>
 <p>Chromatic 2048 does not require creating an account or signing up with your email. We do not ask for your name, email, phone number, location, or access to your contacts, photos or microphone. This is the data that is processed:</p>
-<table><tr><th>Data</th><th>What we use it for</th><th>How it is handled</th></tr><tr><td>Game data saved on your device (settings, saved run, records)</td><td>To run the game and save your progress</td><td>Stored encrypted <b>on your device only</b>; they are not sent to our servers.</td></tr><tr><td>Player ID and public name of your Google Play Games account</td><td>Online leaderboards and showing your name in the table</td><td>Shared with Google Play Games Services.</td></tr><tr><td>Device advertising ID, approximate IP address, device data (model, OS, language) and ad interactions</td><td>To show, measure and cap the frequency of ads; to prevent fraud</td><td>Shared with Google AdMob and its advertising partners.</td></tr><tr><td>Your purchase status (product, purchase token). <b>We do not receive your payment details.</b></td><td>To unlock the full game / remove ads and to restore your purchase</td><td>Payment is processed by the store (Google Play / App Store).</td></tr></table>
+<table><tr><th>Data</th><th>What we use it for</th><th>How it is handled</th></tr><tr><td data-l="Data">Game data saved on your device (settings, saved run, records)</td><td data-l="What we use it for">To run the game and save your progress</td><td data-l="How it is handled">Stored encrypted <b>on your device only</b>; they are not sent to our servers.</td></tr><tr><td data-l="Data">Player ID and public name of your Google Play Games account</td><td data-l="What we use it for">Online leaderboards and showing your name in the table</td><td data-l="How it is handled">Shared with Google Play Games Services.</td></tr><tr><td data-l="Data">Device advertising ID, approximate IP address, device data (model, OS, language) and ad interactions</td><td data-l="What we use it for">To show, measure and cap the frequency of ads; to prevent fraud</td><td data-l="How it is handled">Shared with Google AdMob and its advertising partners.</td></tr><tr><td data-l="Data">Your purchase status (product, purchase token). <b>We do not receive your payment details.</b></td><td data-l="What we use it for">To unlock the full game / remove ads and to restore your purchase</td><td data-l="How it is handled">Payment is processed by the store (Google Play / App Store).</td></tr></table>
 
 <h2>2. How we use information</h2>
 <ul><li>To provide and maintain the game and save your progress.</li><li>To show online leaderboards.</li><li>To show and measure ads.</li><li>To manage your purchases and restore them.</li><li>To prevent fraud and cheating, and to meet legal obligations.</li></ul>
 
 <h2>3. Who we share information with</h2>
-<p>Chromatic 2048 uses third-party services that may collect information used to identify you or for their own purposes. These are the third parties data is shared with:</p><table><tr><th>Third party</th><th>Purpose</th><th>Their policy</th></tr><tr><td>Google Play Games Services</td><td>Leaderboards and player account</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy</a></td></tr><tr><td>Google AdMob</td><td>Advertising</td><td><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Privacy policy</a></td></tr><tr><td>Google Play Billing</td><td>Payments and in-app purchases</td><td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy</a></td></tr></table><p>We do not sell your personal data. We do not share data with any other third parties (for example data brokers or social networks) except where required by law.</p>
+<p>Chromatic 2048 uses third-party services that may collect information used to identify you or for their own purposes. These are the third parties data is shared with:</p><table><tr><th>Third party</th><th>Purpose</th><th>Their policy</th></tr><tr><td data-l="Third party">Google Play Games Services</td><td data-l="Purpose">Leaderboards and player account</td><td data-l="Their policy"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy</a></td></tr><tr><td data-l="Third party">Google AdMob</td><td data-l="Purpose">Advertising</td><td data-l="Their policy"><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Privacy policy</a></td></tr><tr><td data-l="Third party">Google Play Billing</td><td data-l="Purpose">Payments and in-app purchases</td><td data-l="Their policy"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Privacy policy</a></td></tr></table><p>We do not sell your personal data. We do not share data with any other third parties (for example data brokers or social networks) except where required by law.</p>
 <h2>Advertising</h2>
 <p>The free version shows interstitial ads between games through Google AdMob. Ads may or may not be personalized, depending on your settings and consent. In the European Economic Area, the United Kingdom and Switzerland we ask for your consent (Google consent form, UMP) before showing personalized ads, and you can change it later. You can reset or hide your advertising ID from Android settings (Google &gt; Ads). If you buy the ad removal, no ads are shown.</p>
 
