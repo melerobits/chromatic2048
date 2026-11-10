@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Eliminación de cuenta y datos — Chromatic 2048</title>
-<meta name="description" content="Cómo eliminar tu cuenta y tus datos en Chromatic 2048.">
-<meta property="og:title" content="Eliminación de cuenta y datos — Chromatic 2048"><meta property="og:description" content="Cómo eliminar tu cuenta y tus datos en Chromatic 2048."><meta property="og:type" content="website">
-<link rel="icon" href="assets/icon.png">
+<title>Account and data deletion — Chromatic 2048</title>
+<meta name="description" content="How to delete your account and your data in Chromatic 2048.">
+<meta property="og:title" content="Account and data deletion — Chromatic 2048"><meta property="og:description" content="How to delete your account and your data in Chromatic 2048."><meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=eb044149"><link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=eb044149"><link rel="shortcut icon" href="favicon.ico?v=eb044149"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=eb044149">
 <style>@font-face{font-family:'JuegoFuente';src:url('assets/vt323.ttf');font-display:swap}
 :root{--bg:#07070d;--bg2:#0e0e18;--tx:#f2f2f7;--mut:#9a9ab0;--line:rgba(255,255,255,.09);
 --a1:#ff3b3b;--a2:#3bff5e;--a3:#3b6bff;--font:'JuegoFuente',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -18,8 +18,8 @@ a{color:inherit}
 .wrap{width:min(1080px,100%);margin:0 auto;padding:0 24px}
 nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.95rem}
-nav div{display:flex;gap:26px;font-size:.9rem;color:var(--mut)}
+nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+nav div{display:flex;gap:22px;font-size:.78rem;color:var(--mut)}
 nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
 .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
 .hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
@@ -64,25 +64,31 @@ footer div{display:flex;gap:22px}
 details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:700}
 details p{margin:10px 0 0}
+.lang{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang{margin-left:6px}
+.lang a{padding:2px 10px;font-size:.72rem;letter-spacing:.08em}
+.lang a.on{background:var(--a2);color:#07070d;font-weight:700}
+nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px}
+nav div{align-items:center;flex-wrap:wrap;justify-content:flex-end}
 @media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
-<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="terms.html">Condiciones</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a></div></div></nav>
-<main class="wrap doc"><h1>Eliminación de cuenta y datos en Chromatic 2048</h1>
-<p class="meta">Cómo borrar tu información de forma permanente.</p>
-<p>Chromatic 2048 utiliza los servicios de Google Play Games para gestionar el inicio de sesión y las tablas de clasificación (rankings). No almacenamos contraseñas ni datos personales en servidores propios.</p>
-<h2>Cómo solicitar la eliminación de datos</h2>
+<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Download</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete.html">Delete data</a><a href="support.html">Support</a><span class="lang" role="group" aria-label="Language / Idioma"><a href="delete.html" hreflang="en" lang="en" class=on aria-current=true>EN</a><a href="es/delete.html" hreflang="es" lang="es">ES</a></span></div></div></nav>
+<main class="wrap doc"><h1>Account and data deletion in Chromatic 2048</h1>
+<p class="meta">How to permanently delete your information.</p>
+<p>Chromatic 2048 uses Google Play Games services to manage sign-in and leaderboards. We do not store passwords or personal data on our own servers.</p>
+<h2>How to request data deletion</h2>
 <ol>
-<li>Abre la aplicación <b>Play Games</b> en tu dispositivo Android.</li>
-<li>Ve a tu perfil y configuración de privacidad para eliminar los datos del juego de forma permanente, o bien desvincula tu cuenta de Google Play Juegos.</li>
-<li>Si deseas solicitar la eliminación completa de tus puntajes en los rankings globales, puedes enviarnos un correo electrónico directamente a <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a> indicando tu ID de usuario de Google Play Games, y procederemos a borrar tu registro de las tablas en un plazo máximo de 48 horas.</li>
+<li>Open the <b>Play Games</b> app on your Android device.</li>
+<li>Go to your profile and privacy settings to permanently delete the game's data, or unlink your Google Play Games account.</li>
+<li>If you want your scores removed completely from the global leaderboards, email us at <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a> with your Google Play Games player ID and we will delete your entry from the tables within 48 hours at most.</li>
 </ol>
-<h2>Tipos de datos que se conservan o se borran</h2>
-<p>Al borrar o desvincular la cuenta de Play Games, se eliminan todos los logros, puntajes e identificadores asociados a tu perfil. Ningún dato personal es retenido tras la solicitud.</p>
-<p>Más información en nuestra <a href="privacy.html">Política de Privacidad</a>.</p></main>
+<h2>Which data is kept or deleted</h2>
+<p>When you delete or unlink your Play Games account, all achievements, scores and identifiers linked to your profile are removed. No personal data is retained after the request.</p>
+<p>More information in our <a href="privacy.html">Privacy Policy</a>.</p></main>
 <footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
-<div><a href="privacy.html">Política de Privacidad</a><a href="terms.html">Condiciones del Servicio</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
+<div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete.html">Account and data deletion</a><a href="support.html">Support</a></div></div></footer>
 </body></html>

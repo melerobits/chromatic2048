@@ -9,7 +9,14 @@
     "#3b6bff"
   ],
   "icono": "assets/icon.png",
-  "capturas": [],
+  "capturas": [
+    "assets/capturas/captura_1_menu.png",
+    "assets/capturas/captura_2_partida.png",
+    "assets/capturas/captura_3_modos.png",
+    "assets/capturas/captura_4_temas.png",
+    "assets/capturas/captura_5_rgb.png",
+    "assets/capturas/captura_6_desafios.png"
+  ],
   "fuente": "assets/vt323.ttf",
   "soporte": {
     "email": "melerobits@gmail.com",
@@ -18,14 +25,19 @@
     "faq": [
       {
         "pregunta": "¿Cómo quito los anuncios?",
-        "respuesta": "Con la compra única «Chromatic Premium» desde el botón dorado del menú principal. La compra se restaura sola al reinstalar o cambiar de móvil."
+        "respuesta": "Con la compra única «Chromatic Premium» desde el botón dorado del menú principal. La compra se restaura sola al reinstalar o cambiar de móvil.",
+        "pregunta_en": "How do I remove ads?",
+        "respuesta_en": "With the one-time purchase “Chromatic Premium” from the golden button on the main menu. The purchase is restored automatically when you reinstall or switch phones."
       },
       {
         "pregunta": "¿Perderé mi partida si desinstalo el juego?",
-        "respuesta": "La partida y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games."
+        "respuesta": "La partida y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games.",
+        "pregunta_en": "Will I lose my game if I uninstall?",
+        "respuesta_en": "The game and settings are saved only on your device; uninstalling deletes them. Your online records stay in your Google Play Games account."
       }
     ],
-    "nombre": "AlexVentor"
+    "nombre": "AlexVentor",
+    "tiempo_respuesta_en": "48 business hours"
   },
   "privacidad": {
     "fecha_vigencia": "",

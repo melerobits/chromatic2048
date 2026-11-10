@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Soporte — Chromatic 2048</title>
-<meta name="description" content="Soporte técnico de Chromatic 2048.">
-<meta property="og:title" content="Soporte — Chromatic 2048"><meta property="og:description" content="Soporte técnico de Chromatic 2048."><meta property="og:type" content="website">
-<link rel="icon" href="assets/icon.png">
+<title>Support — Chromatic 2048</title>
+<meta name="description" content="Technical support for Chromatic 2048.">
+<meta property="og:title" content="Support — Chromatic 2048"><meta property="og:description" content="Technical support for Chromatic 2048."><meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=eb044149"><link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=eb044149"><link rel="shortcut icon" href="favicon.ico?v=eb044149"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=eb044149">
 <style>@font-face{font-family:'JuegoFuente';src:url('assets/vt323.ttf');font-display:swap}
 :root{--bg:#07070d;--bg2:#0e0e18;--tx:#f2f2f7;--mut:#9a9ab0;--line:rgba(255,255,255,.09);
 --a1:#ff3b3b;--a2:#3bff5e;--a3:#3b6bff;--font:'JuegoFuente',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -18,8 +18,8 @@ a{color:inherit}
 .wrap{width:min(1080px,100%);margin:0 auto;padding:0 24px}
 nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.95rem}
-nav div{display:flex;gap:26px;font-size:.9rem;color:var(--mut)}
+nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+nav div{display:flex;gap:22px;font-size:.78rem;color:var(--mut)}
 nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
 .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
 .hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
@@ -64,25 +64,31 @@ footer div{display:flex;gap:22px}
 details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:700}
 details p{margin:10px 0 0}
+.lang{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang{margin-left:6px}
+.lang a{padding:2px 10px;font-size:.72rem;letter-spacing:.08em}
+.lang a.on{background:var(--a2);color:#07070d;font-weight:700}
+nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px}
+nav div{align-items:center;flex-wrap:wrap;justify-content:flex-end}
 @media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
-<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="terms.html">Condiciones</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a></div></div></nav>
-<main class="wrap doc"><h1>Soporte de Chromatic 2048</h1>
-<p class="meta">Estamos aquí para ayudarte.</p>
-<h2>Contacto</h2>
-<ul><li><b>Nombre:</b> AlexVentor</li><li><b>Correo de soporte:</b> <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a></li>
+<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Download</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete.html">Delete data</a><a href="support.html">Support</a><span class="lang" role="group" aria-label="Language / Idioma"><a href="support.html" hreflang="en" lang="en" class=on aria-current=true>EN</a><a href="es/support.html" hreflang="es" lang="es">ES</a></span></div></div></nav>
+<main class="wrap doc"><h1>Chromatic 2048 Support</h1>
+<p class="meta">We are here to help.</p>
+<h2>Contact</h2>
+<ul><li><b>Name:</b> AlexVentor</li><li><b>Support email:</b> <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a></li>
 
-<li><b>Tiempo de respuesta:</b> 48 horas hábiles</li></ul>
-<h2>Al reportar un problema, incluye</h2>
-<ul><li>Modelo de tu dispositivo y versión del sistema operativo.</li><li>Versión del juego (la ves en Ajustes).</li>
-<li>Qué estabas haciendo y, si puedes, una captura de pantalla.</li></ul>
-<h2>Preguntas frecuentes</h2><details><summary>¿Cómo quito los anuncios?</summary><p>Con la compra única «Chromatic Premium» desde el botón dorado del menú principal. La compra se restaura sola al reinstalar o cambiar de móvil.</p></details><details><summary>¿Perderé mi partida si desinstalo el juego?</summary><p>La partida y los ajustes se guardan solo en tu dispositivo; al desinstalar se eliminan. Tus récords online siguen en tu cuenta de Google Play Games.</p></details>
-<h2>Privacidad y datos</h2>
-<p>Consulta nuestra <a href="privacy.html">Política de Privacidad</a>, las <a href="terms.html">Condiciones del Servicio</a> y cómo <a href="delete.html">eliminar tu cuenta y datos</a>. Para ejercer tus derechos sobre tus datos, escríbenos al correo de soporte.</p></main>
+<li><b>Response time:</b> 48 business hours</li></ul>
+<h2>When reporting a problem, please include</h2>
+<ul><li>Your device model and operating system version.</li><li>The game version (you can find it in Settings).</li>
+<li>What you were doing and, if possible, a screenshot.</li></ul>
+<h2>Frequently asked questions</h2><details><summary>How do I remove ads?</summary><p>With the one-time purchase “Chromatic Premium” from the golden button on the main menu. The purchase is restored automatically when you reinstall or switch phones.</p></details><details><summary>Will I lose my game if I uninstall?</summary><p>The game and settings are saved only on your device; uninstalling deletes them. Your online records stay in your Google Play Games account.</p></details>
+<h2>Privacy and data</h2>
+<p>Read our <a href="privacy.html">Privacy Policy</a>, our <a href="terms.html">Terms of Service</a> and how to <a href="delete.html">delete your account and data</a>. To exercise your rights over your data, email us at the support address.</p></main>
 <footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
-<div><a href="privacy.html">Política de Privacidad</a><a href="terms.html">Condiciones del Servicio</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
+<div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete.html">Account and data deletion</a><a href="support.html">Support</a></div></div></footer>
 </body></html>

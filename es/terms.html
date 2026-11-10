@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Condiciones del Servicio — Chromatic 2048</title>
+<meta name="description" content="Condiciones del Servicio de Chromatic 2048: licencia de uso, reglas, compras, publicidad y responsabilidad.">
+<meta property="og:title" content="Condiciones del Servicio — Chromatic 2048"><meta property="og:description" content="Condiciones del Servicio de Chromatic 2048: licencia de uso, reglas, compras, publicidad y responsabilidad."><meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png?v=eb044149"><link rel="icon" type="image/png" sizes="192x192" href="../assets/favicon-192.png?v=eb044149"><link rel="shortcut icon" href="../favicon.ico?v=eb044149"><link rel="apple-touch-icon" href="../assets/apple-touch-icon.png?v=eb044149">
+<style>@font-face{font-family:'JuegoFuente';src:url('../assets/vt323.ttf');font-display:swap}
+:root{--bg:#07070d;--bg2:#0e0e18;--tx:#f2f2f7;--mut:#9a9ab0;--line:rgba(255,255,255,.09);
+--a1:#ff3b3b;--a2:#3bff5e;--a3:#3b6bff;--font:'JuegoFuente',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
+body{font-size:1.3rem}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--tx);font-family:var(--font);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{width:min(1080px,100%);margin:0 auto;padding:0 24px}
+nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+nav div{display:flex;gap:22px;font-size:.78rem;color:var(--mut)}
+nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
+.hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
+.hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
+.hero::before{background:radial-gradient(circle,var(--a1) 2.4px,transparent 3px) 0 0/18px 18px;-webkit-mask-image:linear-gradient(120deg,#000,transparent 65%);mask-image:linear-gradient(120deg,#000,transparent 65%)}
+.hero::after{background:radial-gradient(circle,var(--a3) 2.4px,transparent 3px) 9px 9px/18px 18px;-webkit-mask-image:linear-gradient(300deg,#000,transparent 65%);mask-image:linear-gradient(300deg,#000,transparent 65%)}
+@keyframes flota{to{transform:translate(8vmax,6vmax) scale(1.15)}}
+.hero .wrap{position:relative;z-index:2}
+.icon{width:clamp(110px,16vw,168px);height:auto;border-radius:22%;image-rendering:pixelated;box-shadow:0 0 0 1px var(--line),0 24px 80px #000a,0 0 70px color-mix(in srgb,var(--a3) 40%,transparent);margin-bottom:34px}
+h1{font-size:clamp(2.6rem,9vw,6.4rem);line-height:1;letter-spacing:.04em;text-transform:uppercase;font-weight:800;
+background:linear-gradient(100deg,var(--a1),var(--a2) 50%,var(--a3));-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 6px 40px #0009)}
+section{padding:96px 0}
+h2{font-size:clamp(1.5rem,3.4vw,2.1rem);text-transform:uppercase;letter-spacing:.1em;text-align:center;margin-bottom:12px}
+.sub{text-align:center;color:var(--mut);margin-bottom:44px}
+.video{position:relative;aspect-ratio:16/9;border-radius:18px;overflow:hidden;background:#000 center/cover;box-shadow:0 0 0 1px var(--line),0 30px 90px #000c}
+.video iframe,.video button{position:absolute;inset:0;width:100%;height:100%;border:0}
+.video button{background:linear-gradient(#0000,#0008);cursor:pointer;display:grid;place-items:center;border:0}
+.play{width:92px;height:92px;border-radius:50%;background:#ffffffee;display:grid;place-items:center;transition:transform .2s}
+.video button:hover .play{transform:scale(1.1)}
+.play::after{content:"";border-left:26px solid #07070d;border-top:16px solid transparent;border-bottom:16px solid transparent;margin-left:8px}
+.soon{display:grid;place-items:center;aspect-ratio:16/9;border-radius:18px;border:1px dashed #ffffff30;color:var(--mut)}
+.shots{display:flex;gap:16px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
+.shots img{height:420px;border-radius:14px;border:1px solid var(--line);scroll-snap-align:start}
+.stores{display:flex;flex-wrap:wrap;gap:16px;justify-content:center}
+.store{display:flex;align-items:center;gap:16px;min-width:240px;padding:16px 26px;border-radius:14px;background:var(--bg2);border:1px solid var(--line);text-decoration:none;transition:transform .2s,border-color .2s,box-shadow .2s}
+.store:hover{transform:translateY(-3px);border-color:var(--brand);box-shadow:0 12px 40px color-mix(in srgb,var(--brand) 28%,transparent)}
+.store img{width:34px;height:34px}
+.store small{display:block;color:var(--mut);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.store b{font-size:1.2rem}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mut);font-size:.88rem}
+footer .wrap{display:flex;gap:18px;justify-content:space-between;flex-wrap:wrap}
+footer div{display:flex;gap:22px}
+.doc{padding:130px 0 80px;max-width:820px}
+.doc h1{font-size:clamp(1.9rem,5vw,2.8rem);letter-spacing:.03em;margin-bottom:8px}
+.doc .meta{color:var(--mut);margin-bottom:36px}
+.doc h2{text-align:left;font-size:1.25rem;letter-spacing:.02em;text-transform:none;margin:38px 0 10px}
+.doc p,.doc li{color:#d0d0de;margin-bottom:10px}
+.doc ul{padding-left:22px}
+.doc a{color:var(--a2)}
+.doc table{width:100%;border-collapse:collapse;margin:12px 0 18px;font-size:.93rem}
+.doc th,.doc td{border:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top;color:#d0d0de}
+.doc th{background:var(--bg2);color:var(--tx)}
+details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
+summary{cursor:pointer;font-weight:700}
+details p{margin:10px 0 0}
+.lang{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang{margin-left:6px}
+.lang a{padding:2px 10px;font-size:.72rem;letter-spacing:.08em}
+.lang a.on{background:var(--a2);color:#07070d;font-weight:700}
+nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px}
+nav div{align-items:center;flex-wrap:wrap;justify-content:flex-end}
+@media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
+<div><a href="index.html#gameplay">Gameplay</a><a href="index.html#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="terms.html">Condiciones</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a><span class="lang" role="group" aria-label="Language / Idioma"><a href="../terms.html" hreflang="en" lang="en">EN</a><a href="terms.html" hreflang="es" lang="es" class=on aria-current=true>ES</a></span></div></div></nav>
+<main class="wrap doc"><h1>Condiciones del Servicio de Chromatic 2048</h1>
+<p class="meta">Última actualización: 10/11/2026</p>
+<h2>1. Aceptación de las condiciones</h2>
+<p>Estas Condiciones del Servicio («Condiciones») regulan el uso de <b>Chromatic 2048</b> («el juego» o «la app»), ofrecido por <b>AlexVentor</b> («nosotros»). Al descargar, instalar o usar el juego aceptas estas Condiciones y nuestra <a href="privacy.html">Política de Privacidad</a>. Si no estás de acuerdo, no uses el juego.</p>
+<h2>2. Edad mínima</h2>
+<p>Debes tener al menos 13 años (o la edad mínima que exija la ley de tu país) para usar el juego. Si eres menor de edad, debes contar con el permiso de tu madre, padre o tutor legal.</p>
+<h2>3. Licencia de uso</h2>
+<p>Te concedemos una licencia personal, limitada, no exclusiva, intransferible y revocable para instalar y usar Chromatic 2048 en tus dispositivos, únicamente para fines de entretenimiento personal y no comercial, conforme a estas Condiciones y a las reglas de la tienda desde la que lo descargaste.</p>
+<h2>4. Uso aceptable</h2>
+<p>Te comprometes a no:</p><ul><li>copiar, modificar, descompilar, aplicar ingeniería inversa ni intentar obtener el código fuente del juego, salvo que la ley lo permita expresamente;</li><li>vender, alquilar, sublicenciar o redistribuir el juego o sus recursos;</li><li>hacer trampas, usar bots, emuladores con fines fraudulentos, herramientas de modificación de memoria o cualquier método para alterar puntuaciones, clasificaciones o compras;</li><li>interferir con el funcionamiento del juego o de los servicios de terceros que utiliza;</li><li>usar el juego de forma ilegal o para acosar, engañar o perjudicar a otras personas.</li></ul>
+<h2>5. Cuentas y clasificaciones</h2>
+<p>Eres responsable de la seguridad de tu cuenta y de la actividad realizada con ella. Las clasificaciones online y tu perfil de jugador se gestionan a través de Google Play Games Services y sus propias condiciones. Podemos eliminar puntuaciones u ocultar perfiles que incumplan estas Condiciones (por ejemplo, por hacer trampas).</p>
+<h2>6. Compras integradas</h2>
+<p>El juego puede ofrecer compras dentro de la app. El pago, la facturación y los reembolsos los gestiona Google Play Billing y se rigen por sus propias condiciones; nosotros no recibimos tus datos de pago. Las compras se asocian a tu cuenta de la tienda y se pueden restaurar con la misma cuenta. Salvo que la ley aplicable o la política de la tienda disponga otra cosa, las compras de contenido digital ya entregado no son reembolsables por nosotros. Para solicitar un reembolso, utiliza el procedimiento de la tienda.</p>
+<h2>7. Publicidad</h2>
+<p>La versión gratuita puede mostrar anuncios a través de Google AdMob. No controlamos el contenido de los anuncios de terceros ni somos responsables de los productos o servicios que anuncian. Consulta la <a href="privacy.html">Política de Privacidad</a> para saber cómo se tratan tus datos en la publicidad.</p>
+<h2>8. Propiedad intelectual</h2>
+<p>El juego, incluidos su código, diseño, gráficos, sonidos, música, textos, nombre y logotipos, pertenece a AlexVentor o a sus licenciantes y está protegido por las leyes de propiedad intelectual. Estas Condiciones no te transfieren ningún derecho de propiedad, salvo la licencia de uso indicada. Las marcas de terceros (tiendas, plataformas) pertenecen a sus respectivos titulares.</p>
+<h2>9. Servicios de terceros</h2>
+<p>El juego puede apoyarse en servicios de terceros (tiendas de aplicaciones, servicios de juegos, publicidad, etc.). Su uso está sujeto a las condiciones y políticas de esos terceros, de las que no somos responsables.</p>
+<h2>10. Disponibilidad, actualizaciones y cambios</h2>
+<p>Podemos actualizar, modificar, suspender o discontinuar el juego o alguna de sus funciones en cualquier momento, con o sin aviso previo. Algunas actualizaciones pueden ser necesarias para seguir jugando. No garantizamos que el juego esté siempre disponible ni libre de errores.</p>
+<h2>11. Exclusión de garantías</h2>
+<p>El juego se ofrece «tal cual» y «según disponibilidad», sin garantías de ningún tipo, expresas o implícitas, en la medida máxima permitida por la ley. Esto no afecta a los derechos que como consumidor te reconozca la ley de forma irrenunciable.</p>
+<h2>12. Limitación de responsabilidad</h2>
+<p>En la medida máxima permitida por la ley, AlexVentor no será responsable de daños indirectos, incidentales, especiales o consecuentes derivados del uso o la imposibilidad de uso del juego (como la pérdida de progreso o de datos guardados en tu dispositivo). Nada en estas Condiciones limita la responsabilidad que no pueda excluirse legalmente.</p>
+<h2>13. Terminación</h2>
+<p>Puedes dejar de usar el juego en cualquier momento desinstalándolo. Podemos suspender o terminar tu acceso si incumples estas Condiciones. Las cláusulas que por su naturaleza deban subsistir (propiedad intelectual, exclusión de garantías, limitación de responsabilidad) seguirán vigentes tras la terminación.</p>
+<h2>14. Ley aplicable</h2>
+<p>Estas Condiciones se rigen por la legislación aplicable en el lugar de residencia del desarrollador, sin perjuicio de las normas de protección al consumidor de tu país de residencia que te sean aplicables de forma imperativa.</p>
+<h2>15. Cambios en las Condiciones</h2>
+<p>Podemos modificar estas Condiciones. Publicaremos la versión vigente en esta misma dirección con su fecha de actualización; el uso continuado del juego tras los cambios implica su aceptación.</p>
+<h2>16. Contacto</h2>
+<p>AlexVentor — <a href="mailto:melerobits@gmail.com">melerobits@gmail.com</a> — <a href="support.html">Página de soporte</a></p>
+</main>
+<footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
+<div><a href="privacy.html">Política de Privacidad</a><a href="terms.html">Condiciones del Servicio</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
+</body></html>

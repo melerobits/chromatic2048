@@ -1,8 +1,9 @@
 ﻿clave,valor
-# Enlaces de descarga: pega la URL completa (https://...). ,
+,
 steam,
 itch,
 play_store,https://play.google.com/store/apps/details?id=com.alexventor.chromatic2048&hl=en-US&ah=hWfvLmFXHnX-MPc2zaz0EKne9x4
 app_store,
 ,
 descripcion,"Desliza los bloques como en 2048, mezcla rojo, verde y azul y descubre amarillo, magenta, cian... hasta alcanzar la luz blanca."
+descripcion_en,"Slide the blocks like in 2048, mix red, green and blue and discover yellow, magenta, cyan... until you reach white light."

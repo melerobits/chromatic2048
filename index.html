@@ -1,12 +1,12 @@
 <!doctype html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Chromatic 2048</title>
-<meta name="description" content="Desliza los bloques como en 2048, mezcla rojo, verde y azul y descubre amarillo, magenta, cian... hasta alcanzar la luz blanca.">
-<meta property="og:title" content="Chromatic 2048"><meta property="og:description" content="Desliza los bloques como en 2048, mezcla rojo, verde y azul y descubre amarillo, magenta, cian... hasta alcanzar la luz blanca."><meta property="og:type" content="website">
-<link rel="icon" href="assets/icon.png">
+<meta name="description" content="Slide the blocks like in 2048, mix red, green and blue and discover yellow, magenta, cyan... until you reach white light.">
+<meta property="og:title" content="Chromatic 2048"><meta property="og:description" content="Slide the blocks like in 2048, mix red, green and blue and discover yellow, magenta, cyan... until you reach white light."><meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png?v=eb044149"><link rel="icon" type="image/png" sizes="192x192" href="assets/favicon-192.png?v=eb044149"><link rel="shortcut icon" href="favicon.ico?v=eb044149"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=eb044149">
 <style>@font-face{font-family:'JuegoFuente';src:url('assets/vt323.ttf');font-display:swap}
 :root{--bg:#07070d;--bg2:#0e0e18;--tx:#f2f2f7;--mut:#9a9ab0;--line:rgba(255,255,255,.09);
 --a1:#ff3b3b;--a2:#3bff5e;--a3:#3b6bff;--font:'JuegoFuente',system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif}
@@ -18,8 +18,8 @@ a{color:inherit}
 .wrap{width:min(1080px,100%);margin:0 auto;padding:0 24px}
 nav{position:fixed;inset:0 0 auto 0;z-index:20;background:linear-gradient(#07070dcc,#07070d00);backdrop-filter:blur(6px)}
 nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.95rem}
-nav div{display:flex;gap:26px;font-size:.9rem;color:var(--mut)}
+nav b{letter-spacing:.14em;text-transform:uppercase;font-size:.85rem}
+nav div{display:flex;gap:22px;font-size:.78rem;color:var(--mut)}
 nav a{text-decoration:none;transition:color .2s}nav a:hover{color:var(--tx)}
 .hero{position:relative;min-height:100vh;display:grid;place-items:center;text-align:center;overflow:hidden;padding:110px 0 70px}
 .hero::before,.hero::after{content:"";position:absolute;inset:0;pointer-events:none}
@@ -64,21 +64,27 @@ footer div{display:flex;gap:22px}
 details{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin-bottom:10px}
 summary{cursor:pointer;font-weight:700}
 details p{margin:10px 0 0}
+.lang{display:inline-flex;gap:0;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.lang{margin-left:6px}
+.lang a{padding:2px 10px;font-size:.72rem;letter-spacing:.08em}
+.lang a.on{background:var(--a2);color:#07070d;font-weight:700}
+nav .wrap{flex-wrap:wrap;min-height:64px;height:auto;padding-top:8px;padding-bottom:8px}
+nav div{align-items:center;flex-wrap:wrap;justify-content:flex-end}
 @media(max-width:640px){nav div{gap:16px}.shots img{height:320px}.store{width:100%}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body>
 <nav><div class="wrap"><b><a href="index.html" style="text-decoration:none">Chromatic 2048</a></b>
-<div><a href="#gameplay">Gameplay</a><a href="#descargas">Descargar</a><a href="privacy.html">Privacidad</a><a href="terms.html">Condiciones</a><a href="delete.html">Eliminar datos</a><a href="support.html">Soporte</a></div></div></nav>
+<div><a href="#gameplay">Gameplay</a><a href="#descargas">Download</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="delete.html">Delete data</a><a href="support.html">Support</a><span class="lang" role="group" aria-label="Language / Idioma"><a href="index.html" hreflang="en" lang="en" class=on aria-current=true>EN</a><a href="es/index.html" hreflang="es" lang="es">ES</a></span></div></div></nav>
 <header class="hero">
-<div class="wrap"><img class="icon" src="assets/icon.png" alt="Icono de Chromatic 2048"><h1>Chromatic 2048</h1>
+<div class="wrap"><img class="icon" src="assets/icon.png" alt="Icon of Chromatic 2048"><h1>Chromatic 2048</h1>
 </div></header>
-<section id="gameplay"><div class="wrap"><h2>Gameplay</h2><p class="sub">Desliza los bloques como en 2048, mezcla rojo, verde y azul y descubre amarillo, magenta, cian... hasta alcanzar la luz blanca.</p><div class="video" id="vid" style="background-image:url('https://i.ytimg.com/vi/iEH2Cj9Nv3o/hqdefault.jpg')">
-<button type="button" aria-label="Reproducir el gameplay" onclick="document.getElementById('vid').innerHTML='<iframe src=&quot;https://www.youtube-nocookie.com/embed/iEH2Cj9Nv3o?autoplay=1&amp;rel=0&quot; title=&quot;Gameplay&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen></iframe>'"><span class="play"></span></button></div>
-<noscript><p class="sub" style="margin-top:18px"><a href="https://www.youtube.com/watch?v=iEH2Cj9Nv3o">Ver el gameplay en YouTube</a></p></noscript></div></section>
-
-<section id="descargas"><div class="wrap"><h2>Descarga el juego</h2><p class="sub">Elige tu plataforma</p><div class="stores"><a class="store" style="--brand:#34a853" href="https://play.google.com/store/apps/details?id=com.alexventor.chromatic2048&amp;hl=en-US&amp;ah=hWfvLmFXHnX-MPc2zaz0EKne9x4" target="_blank" rel="noopener"><img src="assets/platforms/googleplay.svg" alt="Google Play"><span><small>Descárgalo en</small><b>Google Play</b></span></a></div></div></section>
+<section id="gameplay"><div class="wrap"><h2>Gameplay</h2><p class="sub">Slide the blocks like in 2048, mix red, green and blue and discover yellow, magenta, cyan... until you reach white light.</p><div class="video" id="vid" style="background-image:url('https://i.ytimg.com/vi/iEH2Cj9Nv3o/hqdefault.jpg')">
+<button type="button" aria-label="Play the gameplay video" onclick="document.getElementById('vid').innerHTML='<iframe src=&quot;https://www.youtube-nocookie.com/embed/iEH2Cj9Nv3o?autoplay=1&amp;rel=0&quot; title=&quot;Gameplay&quot; allow=&quot;autoplay; encrypted-media; picture-in-picture&quot; allowfullscreen></iframe>'"><span class="play"></span></button></div>
+<noscript><p class="sub" style="margin-top:18px"><a href="https://www.youtube.com/watch?v=iEH2Cj9Nv3o">Watch the gameplay on YouTube</a></p></noscript></div></section>
+<section id="capturas"><div class="wrap"><h2>Screenshots</h2><p class="sub">&nbsp;</p><div class="shots"><img src="assets/captura_1_menu.png" alt="Screenshot of Chromatic 2048" loading="lazy"><img src="assets/captura_2_partida.png" alt="Screenshot of Chromatic 2048" loading="lazy"><img src="assets/captura_3_modos.png" alt="Screenshot of Chromatic 2048" loading="lazy"><img src="assets/captura_4_temas.png" alt="Screenshot of Chromatic 2048" loading="lazy"><img src="assets/captura_5_rgb.png" alt="Screenshot of Chromatic 2048" loading="lazy"><img src="assets/captura_6_desafios.png" alt="Screenshot of Chromatic 2048" loading="lazy"></div></div></section>
+<section id="descargas"><div class="wrap"><h2>Download the game</h2><p class="sub">Choose your platform</p><div class="stores"><a class="store" style="--brand:#34a853" href="https://play.google.com/store/apps/details?id=com.alexventor.chromatic2048&amp;hl=en-US&amp;ah=hWfvLmFXHnX-MPc2zaz0EKne9x4" target="_blank" rel="noopener"><img src="assets/platforms/googleplay.svg" alt="Google Play"><span><small>Get it on</small><b>Google Play</b></span></a></div></div></section>
 <footer><div class="wrap"><span>© 2026 AlexVentor. Chromatic 2048.</span>
-<div><a href="privacy.html">Política de Privacidad</a><a href="terms.html">Condiciones del Servicio</a><a href="delete.html">Eliminación de cuenta y datos</a><a href="support.html">Soporte</a></div></div></footer>
+<div><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a><a href="delete.html">Account and data deletion</a><a href="support.html">Support</a></div></div></footer>
 </body></html>
